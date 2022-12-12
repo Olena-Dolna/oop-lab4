@@ -41,7 +41,7 @@ namespace StructConsole
         }
         public double GetPriceInUAH()
         {
-            return Cost.ExRate * PriceinCurrency;
+            return Math.Round(Cost.ExRate * PriceinCurrency, 2);
         }
 
         public double GetTotalPriceInUAH()
@@ -214,8 +214,8 @@ namespace StructConsole
                 bool isCorrect;
                 Product[] products = new Product[k];
                 for (int i = 0; i < k; i++)
-                {   Console.Clear();
-                    Console.WriteLine($"Товар [{i + 1}]");
+                {   
+                    Console.WriteLine($"\nТовар [{i + 1}]");
                     Console.WriteLine($"{Fields[0]}: ");
                     name = Console.ReadLine();
                     Console.WriteLine($"{Fields[1]}: ");
