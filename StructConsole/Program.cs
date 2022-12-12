@@ -122,7 +122,7 @@ namespace StructConsole
                                 break;
                             }
                             Console.Clear();
-                            Console.WriteLine($"Введіть номер товару (всього {arr.Length} товари(-ів))");
+                            Console.WriteLine($"Введіть номер товару (всього {arr.Length} товари(-ів)) :");
                             Console.ForegroundColor = ConsoleColor.DarkBlue;
                             int note = GetValue() - 1;
                             if (note > arr.Length - 1 || note < 0)
